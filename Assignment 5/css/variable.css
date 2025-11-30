@@ -1,0 +1,20 @@
+/*roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Monserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  /* Color palette */
+  --red: #FF2400;
+  --bg: #f7f7f7;
+  --text: #0b0b0b;
+  --muted: #6b6b6b;
+
+  /* Layout */
+  --container: 1100px;
+  --gutter: 24px;
+
+  /* Typography */
+  --font-sans:  Roboto, Montserrat ;
+  --heading-weight: 800;
+  --body-weight: 400;
+}

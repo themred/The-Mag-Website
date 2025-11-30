@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>The Mag | Modern Design Magazine</title>
+  <meta name="description" content="Modern magazine site with bold typography and clean layout." />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="canonical" href="/home.html" />
+  <link rel="stylesheet" href="/Assignment 5/css/variable.css" />
+  <link rel="stylesheet" href="/Assignment 5/css/base.css?v=1.0.0" />
+  <link rel="stylesheet" href="/Assignment 5/css/layout.css?v=1.0.0" />
+  <link rel="stylesheet" href="/Assignment 5/css/component.css?v=1.0.0" />
+  <link rel="stylesheet" href="/Assignment 5/css/responsive.css?v=1.0.0" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="/home.html" aria-label="Magazine Home">
+        <span class="brand-title">THE MAG</span>
+      </a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="primaryNav" class="primary-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="/Assignment 5/html/home.html">Home</a></li>
+          <li><a href="/Assignment 5/html/about.html">About</a></li>
+          <li><a href="/Assignment 5/html/blog1.html">Blog</a></li>
+          <li><a href="/Assignment 5/html/blog2.html" aria-current="page">Stories</a></li>
+          <li><a href="/Assignment 5/html/gallery.html">Gallery</a></li>
+          <li><a href="/Assignment 5/html/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" role="main">
+    <section class="hero">
+      <div class="hero-content container">
+        <h1 class="hero-title cursor">CREATE TO CREATE, FILL THE WORLD WITH ART</h1>
+        <p class="hero-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sapien urna, convallis.</p>
+        <a class="cta" href="/Assignment 5/html/gallery.html">Explore Gallery</a>
+      </div>
+    </section>
+
+    <section class="grid-intro container" aria-labelledby="latest">
+      <h2 id="latest">Latest Features</h2>
+      <div class="card-grid">
+        <article class="card">
+          <img src="/Assignment 5/media/toronto-sunset.jpg" alt="Close up of bold typography poster" loading="lazy" />
+          <p>Donec eget eleifend felis. Integer.</p>
+        </article>
+        <article class="card">
+          <img src="/Assignment 5/media/financial-district-new-york-city-sunset.jpg" alt="Studio portrait with dramatic lighting" loading="lazy" />
+          <p>Sed ornare arcu quis nisl.</p>
+        </article>
+        <article class="card">
+          <img src="/Assignment 5/media/miami-night-scene.jpg" alt="Minimalist gallery wall" loading="lazy" />
+          <p>Phasellus consequat tellus tortor. Donec sed faucibus.</p>
+        </article>
+        <article class="card">
+          <img src="/Assignment 5/media/new-york-city-skyscrapers-silhouette-urban-view-sunrise.jpg" alt="Minimalist gallery wall" loading="lazy" />
+          <h3><a href="/gallery.html">Curated</a></h3>
+          <p>Donec sed sem convallis, consequat dolor.</p>
+        </article>
+        <article class="card">
+          <img src="/Assignment 5/media/urban-skyline-with-skyscrapers-sunset.jpg" alt="Minimalist gallery wall" loading="lazy" />
+          <p>Donec eget eleifend felis. Integer.</p>
+        </article>
+        <article class="card">
+          <img src="/Assignment 5/media/wide-shot-modern-busy-city-with-dark-clouds-orange-sky.jpg" alt="Minimalist gallery wall" loading="lazy" />
+          <p>Sed ornare arcu quis nisl.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="year"></span> The Mag</p>
+    </div>
+  </footer>
+
+  <script src="/Assignment 5/js/modal.js?v=1.0.0" defer></script>
+  <script src="/Assignment 5/js/main.js?v=1.0.0" defer></script>
+  <script src="/Assignment 5/js/typing.js"></script>
+</body>
+</html>

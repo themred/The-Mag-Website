@@ -1,0 +1,22 @@
+/* Small components & helpers */
+.header-inner .nav-toggle { display: none; background: transparent; border: none; padding: 8px; cursor:pointer; }
+.header-inner .hamburger { width: 22px; height: 2px; background: var(--text); display: block; position: relative; }
+.header-inner .hamburger::after, .header-inner .hamburger::before {
+  content: ""; position: absolute; left: 0; right: 0; height: 2px; background: var(--text); display: block;
+}
+.header-inner .hamburger::before { top: -6px; }
+.header-inner .hamburger::after { top: 6px; }
+
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.form-grid label { font-size: 0.9rem; color: var(--muted); }
+.form-grid input, .form-grid textarea { padding: 10px; border: 1px solid #e3e3e3; border-radius: 4px; }
+.form-grid textarea { grid-column: 1 / -1; }
+
+.form-actions { margin-top: 12px; }
+.form-status { margin-top: 12px; color: var(--muted); }
+
+/* small screens adjustments helper */
+@media (max-width: 800px) {
+  .card-grid { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+}

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Gallery-The Mag | Modern Design Magazine</title>
+  <meta name="description" content="Gallery of poster-like photography. Click to view full-size images." />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="canonical" href="/gallery.html" />
+  <link rel="stylesheet" href="/Assignment 5/css/variable.css?v=1.0.0" />
+  <link rel="stylesheet" href="/Assignment 5/css/base.css?v=1.0.0" />
+  <link rel="stylesheet" href="/Assignment 5/css/layout.css?v=1.0.0" />
+  <link rel="stylesheet" href="/Assignment 5/css/component.css?v=1.0.0" />
+  <link rel="stylesheet" href="/Assignment 5/css/responsive.css?v=1.0.0" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="/home.html" aria-label="Magazine Home"><span class="brand-title">THE MAG</span></a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="primaryNav" class="primary-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="/Assignment 5/html/home.html">Home</a></li>
+          <li><a href="/Assignment 5/html/about.html">About</a></li>
+          <li><a href="/Assignment 5/html/blog1.html">Blog</a></li>
+          <li><a href="/Assignment 5/html/blog2.html" aria-current="page">Stories</a></li>
+          <li><a href="/Assignment 5/html/gallery.html">Gallery</a></li>
+          <li><a href="/Assignment 5/html/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" role="main">
+     <section class="hero">
+      <div class="hero-content container">
+        <h1 class="hero-title">The Gallery</h1>
+        <p class="hero-sub">Defualt dramatic imagery</p>
+      </div>
+    </section>
+    <section class="container gallery" aria-labelledby="galleryTitle">
+      <h1 id="galleryTitle">  </h1>
+      <p class="lede">Click a thumbnail to open the full image.</p>
+
+      <div class="gallery-grid" role="list">
+       
+        <button class="thumb" data-full="/Assignment 5/media/new-york-city-skyscrapers-silhouette-urban-view-sunrise.jpg" data-caption="Poster 1" aria-label="Open image Poster 1">
+          <img src="/Assignment 5/media/new-york-city-skyscrapers-silhouette-urban-view-sunrise.jpg" alt="Poster 1 thumbnail" loading="lazy" />
+        </button>
+        <button class="thumb" data-full="/Assignment 5/media/wide-shot-modern-busy-city-with-dark-clouds-orange-sky.jpg" data-caption="Poster 2" aria-label="Open image Poster 2">
+          <img src="/Assignment 5/media/wide-shot-modern-busy-city-with-dark-clouds-orange-sky.jpg" alt="Poster 2 thumbnail" loading="lazy" />
+        </button>
+        <button class="thumb" data-full="/Assignment 5/media/new-york-city-skyscrapers-silhouette-urban-view-sunrise.jpg" data-caption="Poster 3" aria-label="Open image Poster 3">
+          <img src="/Assignment 5/media/new-york-city-skyscrapers-silhouette-urban-view-sunrise.jpg" alt="Poster 3 thumbnail" loading="lazy" />
+        </button>
+        <button class="thumb" data-full="/Assignment 5/media/toronto-sunset.jpg" data-caption="Poster 4" aria-label="Open image Poster 4">
+          <img src="/Assignment 5/media/toronto-sunset.jpg" alt="Poster 4 thumbnail" loading="lazy" />
+        </button>
+        <button class="thumb" data-full="/Assignment 5/media/miami-night-scene.jpg" data-caption="Poster 5" aria-label="Open image Poster 5">
+          <img src="/Assignment 5/media/miami-night-scene.jpg" alt="Poster 5 thumbnail" loading="lazy" />
+        </button>
+        <button class="thumb" data-full="/Assignment 5/media/financial-district-new-york-city-sunset.jpg" data-caption="Poster 6" aria-label="Open image Poster 6">
+          <img src="/Assignment 5/media/financial-district-new-york-city-sunset.jpg" alt="Poster 6 thumbnail" loading="lazy" />
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal markup for gallery (hidden by default) -->
+  <div id="galleryModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalCaption">
+    <button class="modal-close" aria-label="Close (Esc)">×</button>
+    <div class="modal-inner">
+      <button class="modal-prev" aria-label="Previous image">‹</button>
+      <div class="modal-image-wrap">
+        <img id="modalImage" src="" alt="" />
+        <p id="modalCaption" class="modal-caption"></p>
+      </div>
+      <button class="modal-next" aria-label="Next image">›</button>
+    </div>
+  </div>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="year"></span> The Mag</p>
+    </div>
+  </footer>
+
+  <script src="/Assignment 5/js/modal.js?v=1.0.0" defer></script>
+  <script src="/Assignment 5/js/main.js?v=1.0.0" defer></script>
+</body>
+</html>
